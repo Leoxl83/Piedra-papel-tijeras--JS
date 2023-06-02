@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Piedra, papel o tijeras!</title>
+</head>
+
+<body>
+
+  <h1>PIEDRA, PAPEL O TIJERAS!</h1>
+  <div class="options">
+    <button class="icon-button" onclick="jugar('piedra')"><i class="fas fa-hand-rock"></i></button>
+    <button class="icon-button" onclick="jugar('papel')"><i class="fas fa-hand-paper"></i></button>
+    <button class="icon-button" onclick="jugar('tijeras')"><i class="fas fa-hand-scissors"></i></button>
+  </div>
+  <div id="resultado"></div>
+  <div id="marcador">Marcador: <span id="jugador-puntos">0</span> - <span id="computadora-puntos">0</span></div>
+  <button id="reiniciar-juego" class="button-reset">Reiniciar Juego</button>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
