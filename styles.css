@@ -67,6 +67,7 @@ h1 {
 
 .button-reset {
   display: none;
+  margin-top: 20px;
   background-color: #333;
   color: #fff;
   border: none;

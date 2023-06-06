@@ -16,10 +16,11 @@
 <body>
 
   <h1>PIEDRA, PAPEL O TIJERAS!</h1>
+  <p>El primero en llegar a 5 gana!</p>
   <div class="options">
-    <button class="icon-button" onclick="jugar('piedra')"><i class="fas fa-hand-rock"></i></button>
-    <button class="icon-button" onclick="jugar('papel')"><i class="fas fa-hand-paper"></i></button>
-    <button class="icon-button" onclick="jugar('tijeras')"><i class="fas fa-hand-scissors"></i></button>
+    <button class="icon-button" id="piedra"><i class="fas fa-hand-rock"></i></button>
+    <button class="icon-button" id="papel"><i class="fas fa-hand-paper"></i></button>
+    <button class="icon-button" id="tijeras"><i class="fas fa-hand-scissors"></i></button>
   </div>
   <div id="resultado"></div>
   <div id="marcador">Marcador: <span id="jugador-puntos">0</span> - <span id="computadora-puntos">0</span></div>

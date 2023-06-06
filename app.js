@@ -4,6 +4,11 @@ let maximoJuegos = 5;
 let juegoIniciado = false; // Variable para controlar si el juego ha comenzado
 let juegoFinalizado = false;
 
+//Botones
+const piedraBtn = document.getElementById('piedra');
+const papelBtn = document.getElementById('papel');
+const tijerasBtn = document.getElementById('tijeras');
+
 function jugar(eleccionUsuario) {
   if (juegoFinalizado) {
     return;
@@ -27,6 +32,16 @@ function jugar(eleccionUsuario) {
 
   actualizarMarcador(resultado);
 }
+
+piedraBtn.addEventListener('click', function() {
+  jugar('piedra');
+});
+papelBtn.addEventListener('click', function() {
+  jugar('papel');
+});
+tijerasBtn.addEventListener('click', function() {
+  jugar('tijeras');
+});
 
 function determinarResultado(eleccionUsuario, eleccionComputadora) {
   if (eleccionUsuario === eleccionComputadora) {
